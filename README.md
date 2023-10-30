@@ -1,6 +1,6 @@
 # KEC
 
-This source code has a simple CRUD operations using React, Node, Express Js and Mongodb with Login and Logout
+This source code has a simple CRUD operations using React, Node, Express Js and Mongodb with Login and Logout. Below are the steps to configure the application
 
 1. To setup client<br />
   Checkout the "client" folder code<br />
