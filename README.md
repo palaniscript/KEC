@@ -1,5 +1,7 @@
 # KEC
 
+This source code has a simple CRUD operations using React, Node, Express Js and Mongodb with Login and Logout
+
 1. To setup client<br />
   Checkout the "client" folder code<br />
   Run 'npm install' inside "client" folder<br />
