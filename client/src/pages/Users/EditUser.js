@@ -8,10 +8,12 @@ import Row from 'react-bootstrap/Row';
 import Toast from 'react-bootstrap/Toast';
 import ToastContainer from 'react-bootstrap/ToastContainer';
 import { useForm } from "react-hook-form";
+import { useParams } from 'react-router-dom';
 
 const EditUser = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const {id} = useParams();
   const [userInfo, setUserInfo] = useState({
     firstName: "",
     lastName: "",
@@ -48,7 +50,7 @@ const EditUser = () => {
   }, []);
 
   const getUserInfo = () => {
-    axios.get(`http://localhost:3100/users/653bc289fa9fa6fa9e001dbb`, {
+    axios.get(`http://localhost:3100/users/${id}`, {
       headers:
         { 'Authorization': localStorage.getItem('accessToken') }
     })
